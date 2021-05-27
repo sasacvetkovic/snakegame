@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="game.js" defer type="module"></script>
+  </head>
+  <body>
+    <div id="game-board"></div>
+
+    <!-- Modal - start game-->
+    <div class="modal modal-start-game">
+      <img src="./snake.png" class="snake-img" alt="" />
+      <h2 class="heading">Choose level:</h2>
+
+      <a class="btn slug" href="#" data-difficult="1"> Slug </a>
+      <a class="btn worm" href="#" data-difficult="3"> Worm </a>
+      <a class="btn python" href="#" data-difficult="5"> Python </a>
+    </div>
+    <!-- Modal - game over  -->
+    <div class="modal modal-game-over hidden">
+      <h1 class="game-over">Game over</h1>
+      <a href="#" class="btn btn-play-again">Play again</a>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+  </body>
+</html>
