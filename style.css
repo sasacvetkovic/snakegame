@@ -98,5 +98,12 @@ body {
   z-index: 5;
 }
 /* coment 123 */
+.overlay {
+  position: absolute;
+  top: 0;
+  backdrop-filter: blur(4px);
+  z-index: 5;
+}
+
 
 
